@@ -1,27 +1,20 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
-#from .models import Suggestion 
-#from .forms import SuggestionForm
+from .models import Suggestion 
+from .forms import SuggestionForm
 
 ####STOP TRY slide 39
 
 
 def index(request):
-		famePerson = 'Danny'
-		place = 'here'
-		weapon = 'sword'
-		guardian = 'owl'
-		audience = 'sally from Tx'
-		context ={'suggestion_famePerson': famePerson,
-				  'suggestion_place': place,
-				  'suggestion_weapon': weapon,
-				  'suggestion_guardian':guardian,
-				  'suggestion_audience': audience}
-		return render(request, 'index.html', context)
+		suggestions = Suggestion.objects.all()
+		form = SuggestionForm()
+		return render(request, 'index.html', {'suggestions': suggestions, 'form': form})
 
-
-
+# def result(request):
+#		return render(request, 'result.html', {'suggestion': suggestions})
+'''
 class Suggestion:
 	def __init__(self, famePerson, place, weapon, guardian, audience):
 		self.famePerson = famePerson
@@ -48,10 +41,9 @@ def post_suggestion(request):
 		suggestion.save()
 	return HttpResponseRedirect('/')
 
-
 def result(request):
 		suggestions = Suggestion.objects.all()
 		form = SuggestionForm()
 		return render(request, 'result.html', { 'suggestions' : suggestions, 'form' : form })
 
-		'''
+	

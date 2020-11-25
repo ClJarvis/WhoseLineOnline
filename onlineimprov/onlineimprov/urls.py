@@ -6,8 +6,8 @@ from django.conf.urls import include, url
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^', include('main_app.urls')), # see 24
-   # url(r'^post_url/$', views.post_suggestion, name='post_suggestion'),
-   # url(r'^result/$', views.result, name="result"), 
+    url(r'^post_url/$', views.post_suggestion, name='post_suggestion'),
+    url(r'^result/$', views.result, name="result"), 
 ]
 
 
