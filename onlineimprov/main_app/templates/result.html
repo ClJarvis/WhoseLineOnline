@@ -1,0 +1,118 @@
+{% load static %}
+
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+ <!--- ADD BOOTsRAP IF NEEDED SEE PDF P%& --->
+<link href="{% static 'bootstrap.min.css' %}" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{% static 'improv_style.css' %}" />
+<title>Distance suggestions</title>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+	<div class="data-screen">
+		<div class="app-title">
+			<h1>The Audience suggests:</h1>
+	</div>
+			<!--h3>Instructions</h3 -->
+
+		<!--Pick one from each column. -->
+
+	<div class="treasure panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"></h3>
+</div>
+<div class="panel-body">
+
+
+
+<!-- Captain's Page ------->			
+	<div class="pan el-body">
+
+			<h3>Instructions</h3>
+			<div class="instructions">
+				Click the button to get a mix of random suggestions from your audience! <br><br>
+			</div>	<!-- suggestions displays Here -->
+		<!--h1>Audience Suggestions</h1 -->
+<!--
+		{% for suggestion in suggestions %}
+			<p class="p"><span class="title">Famous Person:</span> {{ suggestion.famePerson }} <span class="subscript">suggested by {{ suggestion.audience }}</span></p>
+		{% endfor %}
+--->
+		<input type="submit" value="Give me a suggestion" class="btn btn-primary btn-large btn-block" id="submit" onclick="location.reload();">
+	<hr>
+
+		{% with suggestion=suggestions|random %}
+			<p class="p"><span class="title">Famous Person:</span> {{ suggestion.famePerson }} <span class="subscript">suggested by {{ suggestion.audience }}</span></p>
+		{% endwith%}
+
+		{% with suggestion=suggestions|random %}
+			<p class="p"><span class="title">Location:</span> {{ suggestion.place }} <span class="subscript">suggested by {{ suggestion.audience }}</span></p>
+		{% endwith %}
+
+		{% with suggestion=suggestions|random %}
+			<p class="p"> <span class="title">Weapon: </span>{{ suggestion.weapon }} <span class="subscript">suggested by {{ suggestion.audience }}<span class="subscript"></p>
+		{% endwith %}
+
+		{% with suggestion=suggestions|random %}
+
+			<p class="p"><span class="title">The Guardian:</span> {{ suggestion.guardian }} <span class="subscript">suggested by {{ suggestion.audience }} </span></p>
+		{% endwith %} 
+<hr>
+		{% with suggestion=suggestions|random %}
+			<p class="p"><span class="title">Famous Person:</span> {{ suggestion.famePerson }} <span class="subscript">suggested by {{ suggestion.audience }}</span></p>
+		{% endwith%}
+
+		{% with suggestion=suggestions|random %}
+			<p class="p"><span class="title">Location:</span> {{ suggestion.place }} <span class="subscript">suggested by {{ suggestion.audience }}</span></p>
+		{% endwith %}
+
+		{% with suggestion=suggestions|random %}
+			<p class="p"> <span class="title">Weapon: </span>{{ suggestion.weapon }} <span class="subscript">suggested by {{ suggestion.audience }}<span class="subscript"></p>
+		{% endwith %}
+
+		{% with suggestion=suggestions|random %}
+
+			<p class="p"><span class="title">The Guardian:</span> {{ suggestion.guardian }} <span class="subscript">suggested by {{ suggestion.audience }} </span></p>
+		{% endwith %} 
+
+		<HR>
+		{% with suggestion=suggestions|random %}
+			<p class="p"><span class="title">Famous Person:</span> {{ suggestion.famePerson }} <span class="subscript">suggested by {{ suggestion.audience }}</span></p>
+		{% endwith%}
+
+		{% with suggestion=suggestions|random %}
+			<p class="p"><span class="title">Location:</span> {{ suggestion.place }} <span class="subscript">suggested by {{ suggestion.audience }}</span></p>
+		{% endwith %}
+
+		{% with suggestion=suggestions|random %}
+			<p class="p"> <span class="title">Weapon: </span>{{ suggestion.weapon }} <span class="subscript">suggested by {{ suggestion.audience }}<span class="subscript"></p>
+		{% endwith %}
+
+		{% with suggestion=suggestions|random %}
+
+			<p class="p"><span class="title">The Guardian:</span> {{ suggestion.guardian }} <span class="subscript">suggested by {{ suggestion.audience }} </span></p>
+		{% endwith %} 
+	
+	
+
+
+	</div>
+
+
+
+ </div>
+</div>
+
+
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+</body>
+</html>
