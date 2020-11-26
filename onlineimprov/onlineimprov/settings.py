@@ -34,7 +34,7 @@ ALLOWED_HOSTS = ['vast-escarpment-85552.herokuapp.com/', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
-    'maiiiin_app',
+    'main_app',
     
     'django.contrib.admin',
     'django.contrib.auth',
