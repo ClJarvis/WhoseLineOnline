@@ -34,7 +34,7 @@ ALLOWED_HOSTS = ['vast-escarpment-85552.herokuapp.com/', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
-    'main_app',
+    'maiiiin_app',
     
     'django.contrib.admin',
     'django.contrib.auth',
@@ -73,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'wsgi.application'
+WSGI_APPLICATION = 'onlineimprov.wsgi.application'
 
 
 # Database
