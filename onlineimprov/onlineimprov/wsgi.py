@@ -11,6 +11,8 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'WhoseLineOnline.onlineimprov.onlineimprov.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'onlineimprov.settings')
 
-application = get_wsgi_application()
+application = get_wsgi_application(application)
+
+
