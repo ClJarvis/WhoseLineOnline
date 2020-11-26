@@ -73,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'onlineimprov.wsgi.application'
+WSGI_APPLICATION = 'wsgi.application'
 
 
 # Database
