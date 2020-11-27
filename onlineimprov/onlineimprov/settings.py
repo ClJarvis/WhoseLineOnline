@@ -34,7 +34,7 @@ ALLOWED_HOSTS = ['vast-escarpment-85552.herokuapp.com/', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
-    'onlineimprov.main_app',
+    'main_app',
     
     'django.contrib.admin',
     'django.contrib.auth',
@@ -123,7 +123,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-# STATIC_URL = '/static/'
+#STATIC_URL = '/static/'
 
 # Heroku: Update database configuration from $DATABASE_URL.
 import dj_database_url
@@ -134,7 +134,7 @@ DATABASES['default'].update(db_from_env)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 # The absolute path to the directory where collectstatic will collect static files for deployment.
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') #. os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = BASE_DIR / 'staticfiles'  #. os.path.join(BASE_DIR, 'staticfiles')
 
 # The URL to use when referring to static files (where they will be served from)
 STATIC_URL = '/static/'
