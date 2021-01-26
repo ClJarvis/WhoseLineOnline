@@ -1,1 +1,1 @@
-web: gunicorn onlineimprov.onlineimprov.wsgi --log-file -
+web: gunicorn onlineimprov.wsgi --log-file -
