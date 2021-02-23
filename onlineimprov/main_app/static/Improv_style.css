@@ -236,7 +236,7 @@ hr {
 	position: absolute;
 	height: 29px;
     width: 56PX;
-    border-top-right-radius: 70%;
+    border-top-right-radius: 4%;
     border-top-left-radius: 70%;
 	border-bottom-left-radius: 20%;
 	border-bottom-right-radius: 20%;
@@ -255,7 +255,7 @@ hr {
 	height: 29px;
     width: 56PX;
     border-top-right-radius: 70%;
-    border-top-left-radius: 70%;
+    border-top-left-radius: 4%;
 	border-bottom-left-radius: 20%;
 	border-bottom-right-radius: 20%;
     transform: skewY(33deg);
@@ -265,6 +265,18 @@ hr {
 	margin-top: -52px;
 	overflow: visible;
 	/*outline: 2px blue solid; */
+}
+
+.cap {
+	background-color: #4a0a47;
+	height: 40px;
+	width: 23px;
+	border-radius: 50%;
+
+	margin-right:-6px;
+	margin-top: -18px;
+
+
 }
 
 .elf_ears {
@@ -282,12 +294,12 @@ hr {
 }
 
 .princess_hat {
-	border-left: 50px solid transparent;
-	border-right:14px solid transparent; 
+	border-left: 40px solid transparent;
+	border-right:40px solid transparent; 
 	border-bottom: calc(4 * 4px * 0.8) solid #4a0a47;
 	border-top: 10px solid transparent; 
 	outline: 2px blue;
-	margin-top: -72px;
+	margin-top: -60px;
     margin-left: -10px;
 }
 
