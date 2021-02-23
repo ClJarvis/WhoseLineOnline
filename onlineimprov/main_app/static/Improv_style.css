@@ -185,3 +185,116 @@ hr {
 	padding: 10px;	
 	height: 10px;
 }
+
+.audienceSilhouette {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	align-items: center;
+	position: absolute; 
+}
+
+.stageLeft, .stageRight {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.audience_body {
+	background-color: #4a0a47;
+	height: 120px;
+	width: 106px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -35px; 
+	
+}
+
+.audience_head {
+	background-color: #4a0a47;
+	position: absolute;
+	height: 62px;
+    width: 56PX;
+    border-top-right-radius: 70%;
+    border-top-left-radius: 83%;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+	margin-top: -125px;
+	overflow: visible;
+
+}
+
+.pirate_hat {
+	background-color: #4a0a47;
+	position: absolute;
+	height: 29px;
+    width: 56PX;
+    border-top-right-radius: 70%;
+    border-top-left-radius: 70%;
+	border-bottom-left-radius: 20%;
+	border-bottom-right-radius: 20%;
+    transform: skewY(-33deg);
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	margin-top: -52px;
+	overflow: visible;
+	/* outline: 2px blue solid; */
+}
+
+.pirate_hat_R {
+	background-color: #4a0a47;
+	position: absolute;
+	height: 29px;
+    width: 56PX;
+    border-top-right-radius: 70%;
+    border-top-left-radius: 70%;
+	border-bottom-left-radius: 20%;
+	border-bottom-right-radius: 20%;
+    transform: skewY(33deg);
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	margin-top: -52px;
+	overflow: visible;
+	/*outline: 2px blue solid; */
+}
+
+.elf_ears {
+	background-color: #4a0a47;
+	height: 42px;
+    width: 10px;
+    margin-top: -30px;
+    margin-right: 0px;
+    border-bottom-left-radius: 62%;
+    border-bottom-right-radius: 62%;
+    border-top-left-radius: 62%;
+    border-top-right-radius: 62%;
+   /* outline: 2px blue solid; */
+
+}
+
+.princess_hat {
+	border-left: 50px solid transparent;
+	border-right:14px solid transparent; 
+	border-bottom: calc(4 * 4px * 0.8) solid #4a0a47;
+	border-top: 10px solid transparent; 
+	outline: 2px blue;
+	margin-top: -72px;
+    margin-left: -10px;
+}
+
+.gapper {
+	width: 1000px;
+    height: fit-content;
+	background-color: #de2203;
+	border: solid 4px #000;
+
+}
