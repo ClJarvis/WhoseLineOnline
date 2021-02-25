@@ -15,7 +15,7 @@ padding: 50px;
 background-color: #FFF;
 padding: 20px;
 border-radius: 5px;
-border:groove 6px #de2203 ; /* #007bff */
+border:groove 6px #de2203; /* #007bff */
 text-align: left;
 }
 
@@ -189,7 +189,7 @@ hr {
 .audienceSilhouette {
 	display: flex;
 	justify-content: space-between;
-	width: 90%;
+	width: 85%;
 	align-items: center;
 	position: absolute; 
 }
@@ -305,8 +305,9 @@ hr {
 
 .gapper {
 	width: 1000px;
+	height: 4px;
     height: fit-content;
 	background-color: #de2203;
-	border: solid 4px #000;
+	border: solid 2px #de2203;
 
 }
