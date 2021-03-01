@@ -46,4 +46,9 @@ def result(request):
 		form = SuggestionForm()
 		return render(request, 'result.html', { 'suggestions' : suggestions, 'form' : form })
 
+def thanks(request):
+		suggestions = Suggestion.objects.all()
+		form = SuggestionForm()
+		return render(request, 'thanks.html', { 'suggestions' : suggestions, 'form' : form })
+
 	

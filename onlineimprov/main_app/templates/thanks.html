@@ -1,0 +1,78 @@
+{% load static %}
+
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=5">
+<meta name="Description" content="We can't travel to do shows, So this your chance to send us suggestions for a remote show.">
+ <!--- ADD BOOTsRAP IF NEEDED SEE PDF P%& --->
+<link href="{% static 'bootstrap.min.css' %}" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{% static 'Improv_style.css' %}" />
+<title>Distance suggestions</title>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+	<div class="data-screen">
+		<div class="app-title">
+			<h1>Thank you, We got the suggestions!</h1>
+	</div>
+			<!--h3>Instructions</h3 -->
+
+		<!--Pick one from each column. -->
+
+	<div class="treasure panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"></h3>
+</div>
+<div class="panel-body">
+
+
+
+<!-- Captain's Page ------->			
+	<div class="pan el-body">
+
+			<h2>Gratitude!</h2>
+			<div class="instructions">
+				Thank you for your suggestions! See you at a secret undisclosed location at an unkonwn time to see if we use it!<br><br>
+			</div>	<!-- suggestions displays Here -->
+		<!--h1>Audience Suggestions</h1 -->
+<!--
+		{% for suggestion in suggestions %}
+			<p class="p"><span class="title">Famous Person:</span> {{ suggestion.famePerson }} <span class="subscript">suggested by {{ suggestion.audience }}</span></p>
+		{% endfor %}
+--->
+	<hr>
+		{% with suggestion=suggestions|random %} 
+		{ 'suggestions' : suggestions, 'form' : form })
+			{{ suggestion.audience }} suggested ...
+
+			<p class="p"><span class="title">Famous Person:</span> {{ suggestion.famePerson }}</p>
+			<p class="p"><span class="title">Location:</span> {{ suggestion.place }}</p>
+
+			<p class="p"> <span class="title">Weapon: </span>{{ suggestion.weapon }} </p>
+
+
+			<p class="p"><span class="title">The Guardian:</span> {{ suggestion.guardian }} </p>
+		{% endwith %} 
+<hr>
+	
+
+	</div>
+
+
+
+ </div>
+</div>
+
+
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+</body>
+</html>

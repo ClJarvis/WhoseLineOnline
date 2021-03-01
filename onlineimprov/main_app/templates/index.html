@@ -6,6 +6,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1, maximum-scale=5">
+<meta name="Description" content="We can't travel to do shows, So this your chance to send us suggestions for a remote show.">
 <link href="{% static 'bootstrap.min.css' %}" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="{% static 'Improv_style.css' %}" />
 
@@ -35,7 +36,7 @@
 		{% csrf_token %}
 		{{ form.as_p }}
 		<div class="suggestion_Button" text-align="center" >
-			<input type="submit" value="Submit Suggestions"  class="btn btn-primary btn-large btn-block" onClick='thankMsg()'/>
+			<input type="submit" value="Submit Suggestions"  class="btn btn-primary btn-large btn-block" /> <!--onClick='thankMsg()' removed from script-->
 		</div>
 	</form>
 	
