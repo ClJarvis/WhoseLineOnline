@@ -35,3 +35,5 @@ https://devcenter.heroku.com/articles/getting-started-with-python#deploy-the-app
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Deployment
 
 https://devcenter.heroku.com/articles/git#deploying-code
+
+https://www.youtube.com/watch?v=Y4c4ickks2A
