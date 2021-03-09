@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from .models import Suggestion 
 from .forms import SuggestionForm
+from django.urls import reverse
 
 ####STOP TRY slide 39
 
@@ -14,23 +15,9 @@ def index(request):
 
 # def result(request):
 #		return render(request, 'result.html', {'suggestion': suggestions})
-'''
-class Suggestion:
-	def __init__(self, famePerson, place, weapon, guardian, audience):
-		self.famePerson = famePerson
-		self.place = place
-		self.weapon = weapon
-		self.guardian = guardian
-		self.audience = audience
 
-
-suggestions = [
-	Suggestion('Batman', 'Tokyo', 'notebook', 'donkey', 'BigFan001'),
-	Suggestion('Eric Clapton', 'Kroger', 'candlestick', 'Frodo Baggins', 'Buddy2020'),
-	Suggestion('The Queen', 'CVS', 'a book', 'a fly', 'Joey')
-	]
-'''
 def post_suggestion(request):
+	#breakpoint()
 	form = SuggestionForm(request.POST)
 	if form.is_valid():
 		suggestion = Suggestion(famePerson = form.cleaned_data['famePerson'],
@@ -39,7 +26,7 @@ def post_suggestion(request):
 								guardian = form.cleaned_data['guardian'],
 								audience = form.cleaned_data['audience'])
 		suggestion.save()
-	return HttpResponseRedirect('/')
+	return HttpResponseRedirect(reverse("thanks"))
 
 def result(request):
 		suggestions = Suggestion.objects.all()
