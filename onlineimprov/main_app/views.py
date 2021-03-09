@@ -5,16 +5,11 @@ from .models import Suggestion
 from .forms import SuggestionForm
 from django.urls import reverse
 
-####STOP TRY slide 39
-
 
 def index(request):
 		suggestions = Suggestion.objects.all()
 		form = SuggestionForm()
 		return render(request, 'index.html', {'suggestions': suggestions, 'form': form})
-
-# def result(request):
-#		return render(request, 'result.html', {'suggestion': suggestions})
 
 def post_suggestion(request):
 	#breakpoint()
