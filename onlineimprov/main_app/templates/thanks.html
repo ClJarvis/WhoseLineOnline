@@ -40,7 +40,7 @@
 
 			<h2>Gratitude!</h2>
 			<div class="instructions">
-				Thank you for your suggestions! See you at a secret undisclosed location at an unkonwn time to see if we use it!<br><br>
+				Thank you for your suggestions! See us at a secret undisclosed location at an unkonwn time to see if we use it!<br><br>
 			</div>	<!-- suggestions displays Here -->
 		<!--h1>Audience Suggestions</h1 -->
 <!--
@@ -50,8 +50,8 @@
 --->
 	<hr>
 		{% with suggestion=suggestions|random %} 
-		{ 'suggestions' : suggestions, 'form' : form })
-			{{ suggestion.audience }} suggested ...
+		
+			<h3>{{ suggestion.audience }} suggested ...</h3>
 
 			<p class="p"><span class="title">Famous Person:</span> {{ suggestion.famePerson }}</p>
 			<p class="p"><span class="title">Location:</span> {{ suggestion.place }}</p>

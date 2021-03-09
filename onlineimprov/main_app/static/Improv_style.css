@@ -32,7 +32,6 @@ text-align: left;
 }
 
 
-
 .app-title {
 text-align: center;
 color: #000;
@@ -133,6 +132,7 @@ margin-top: 12px;
 
 .instructions {
 	margin: 0 0 0 10px;
+	font-size: 1.5em;
 
 }
 

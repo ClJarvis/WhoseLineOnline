@@ -23,7 +23,8 @@
 
 			<h2>Instructions</h2>
 			<div class="instructions">
-				Give us some suggestions. A famous person living, dead, or mostly dead. A famous location, an unusual murder weapon, and an unusual guardian, plus your name for props in the show. Remeber family friendly or we can't use it. Tab or click through the form.
+				Give us some suggestions. A famous person living, dead, or mostly dead. A famous location, an unusual murder weapon, and an unusual guardian, plus your name for props in the show. Remeber family friendly, or we can't use it.<br /> 
+				Tab or click through the form.
 			</div>
 	<div class="panel panel-default">
 <div class="panel-heading">
@@ -32,11 +33,13 @@
 	<div class="panel-body  data-screen login-form">
 
 	<!-- button 123/141 ---->
-		<form method="post" action="post_url/">
+		<form method="post" action="post_url/" >
 		{% csrf_token %}
 		{{ form.as_p }}
+		<div id="show" style="display:none"><a href="thanks">thanks</a></div>
 		<div class="suggestion_Button" text-align="center" >
-			<input type="submit" value="Submit Suggestions" id="myBtn" class="btn btn-primary btn-large btn-block" />  
+			<input type="submit" value="Submit Suggestions" id="myBtn" class="btn btn-primary btn-large btn-block" onclick="document.getElementById('show').style.display='block'"value="ShowMe" />  
+	 		
 		</div>
 	</form>
 	
@@ -90,31 +93,8 @@
 </div>
 	
 <script type="text/javascript">
-	function thankModal(){
-		 modal.style.display = "block";
-		 console.log("it worked!")
-	}
-
-	// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
+	function thankMsg(){
+		alert("Thank you!")
 
 
 </script>
