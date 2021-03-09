@@ -36,9 +36,8 @@
 		<form method="post" action="post_url/" >
 		{% csrf_token %}
 		{{ form.as_p }}
-		<div id="show" style="display:none"><a href="thanks">thanks</a></div>
 		<div class="suggestion_Button" text-align="center" >
-			<input type="submit" value="Submit Suggestions" id="myBtn" class="btn btn-primary btn-large btn-block" onclick="document.getElementById('show').style.display='block'"value="ShowMe" />  
+			<input type="submit" value="Submit Suggestions" id="myBtn" class="btn btn-primary btn-large btn-block" />  
 	 		
 		</div>
 	</form>
@@ -94,7 +93,8 @@
 	
 <script type="text/javascript">
 	function thankMsg(){
-		alert("Thank you!")
+		alert("Thank you!");
+	}
 
 
 </script>
