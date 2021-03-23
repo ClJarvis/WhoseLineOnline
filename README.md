@@ -37,3 +37,8 @@ https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Deployment
 https://devcenter.heroku.com/articles/git#deploying-code
 
 https://www.youtube.com/watch?v=Y4c4ickks2A
+
+sorting user input| wordwrap:5
+
+has no name error should add name see if that allow the filter
+https://docs.djangoproject.com/en/3.1/ref/templates/builtins/#ifchanged

@@ -49,17 +49,17 @@
 		{% endfor %}
 --->
 	<hr>
-		{% with suggestion=suggestions|random %} 
+		{% with suggestion=suggestions|length %} 
 		
-			<h3>{{ suggestion.audience }} suggested ...</h3>
+			<h3>{{ suggestion.audience }} REDACTED suggested ...</h3>
 
-			<p class="p"><span class="title">Famous Person:</span> {{ suggestion.famePerson }}</p>
-			<p class="p"><span class="title">Location:</span> {{ suggestion.place }}</p>
+			<p class="p"><span class="title">Famous Person:</span> {{ suggestion.famePerson }} REDACTED</p>
+			<p class="p"><span class="title">Location:</span> {{ suggestion.place }} REDACTED</p>
 
-			<p class="p"> <span class="title">Weapon: </span>{{ suggestion.weapon }} </p>
+			<p class="p"> <span class="title">Weapon: </span>{{ suggestion.weapon }} REDACTED</p>
 
 
-			<p class="p"><span class="title">The Guardian:</span> {{ suggestion.guardian }} </p>
+			<p class="p"><span class="title">The Guardian:</span> {{ suggestion.guardian }} REDACTED</p>
 		{% endwith %} 
 <hr>
 	
