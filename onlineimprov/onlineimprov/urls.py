@@ -2,7 +2,9 @@ from django.contrib import admin
 from django.urls import path
 from main_app import views, urls
 from django.conf.urls import include, url
-
+""" from django.urls import re_path as url 
+url('admin/', admin.site.urls),
+"""
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^', include('main_app.urls')), # see 24
